@@ -1,0 +1,49 @@
+/* Universal Selectors */
+
+/* *{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+} */
+
+/* selector = h1 . property = color , value = red  */
+
+/* h1{
+    color: red;
+} */
+
+#header{
+    color: red;
+}
+
+/* Class-Selectors */
+
+.paragraph-container{
+    background-color: cadetblue;
+    color: chartreuse;
+    width: 100px;
+    text-align: center;
+}
+
+
+/* combinators */
+.card{
+    background-color: orangered;
+}
+.card p {
+  color: #51ff07;
+}
+
+/* child combinator */
+
+.card > p {
+  font-size: 50px;
+}
+
+.intro + .card-body {
+  border-top: 1px solid #e2e8f0;
+}
+/* Sirf tab chale ga agar .card-body theek .intro ke baad mojood ho */
+/* Yeh sirf .intro aur .footer-text ko pakrega, nested paragraph ko chorega. */
+
+/* Yeh .intro, nested paragraph, aur .footer-text teeno ko target karega. */
